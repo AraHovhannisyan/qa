@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="am.fillandgo.dao.ContractFilesDao">
+
+    <insert id="save">
+        INSERT INTO contract_files (id, name, user_id, created_at, created_by, updated_at, updated_by)
+        VALUES (#{contractFile.id}, #{contractFile.name}, #{contractFile.userId}, #{contractFile.createdAt}, #{contractFile.createdBy}, #{contractFile.updatedAt},#{contractFile.updatedBy})
+    </insert>
+
+</mapper>
